@@ -1,9 +1,9 @@
 #yummy Eeeish what will I eat
-print ("Your wildest desire******press 1",
-            "origin_zero******press 2",
-            "chicken_with_fish_salad******press 3",
-            "roasted_turkey******press 4",
-            "chicken_tail_with_akokomesa*****press 5")
+print ("Your wildest desire******enter your password",
+            "origin_zero******press 0",
+            "chicken_with_fish_salad******press 1",
+            "roasted_turkey******press 2",
+            "chicken_tail_with_akokomesa*****press 3")
 
              
             
@@ -11,7 +11,8 @@ print ("Your wildest desire******press 1",
 
 w_desire = input("Enter anything you want to eat for the first time-Like Ever: ")
 sussex = "Feeling like the luckiest man in the world!!!" + " Served with " + str(w_desire)  + ",eat the meat only, the rest is for the owner"
-food = [sussex, "1", "2", "3", "4"]
+print (sussex)
+food = [sussex, "0", "1", "2", "3"]
 
 def think_tiree():
     while True:
@@ -47,19 +48,21 @@ def call_c_food(think_tiree):
     
 
 while True:
-        choice = input ("you can try as many dishes as you want now: 2nd, 3rd,......")
+        choice = input ("you can try as many dishes as you want(Fill with Roma Numerals:......")#fill with roman numerals
+        
+        #print (sussex)
         
         
-        colgate = input ("enter your choice of food: ")
-        
-        if choice == "2nd":   
+        if choice == "I":  
+            colgate = input ("Fill food/with Integers: ")
             print("successful")
             call_c_food(colgate)
             
         else: 
-            if choice == "3rd":
+            if choice == "II": 
+                voltic = input ("Everything is possible/with Integers: ")
                 print("Successful")
-                call_c_food(colgate)
+                call_c_food(voltic)
                 break
             
             else:
